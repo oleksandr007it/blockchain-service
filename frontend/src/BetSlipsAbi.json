@@ -1,0 +1,372 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "betSlipPlacedId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "fromAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "gameCode",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "gameResult",
+        "type": "string"
+      }
+    ],
+    "name": "betSlipChanged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "betSlipPlacedId",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "fromAddress",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "string",
+        "name": "gameCode",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "createdDate",
+        "type": "uint256"
+      }
+    ],
+    "name": "betSlipPlaced",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "from",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokensReceived",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "betSlipsAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "gameCode",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "playerChoice",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "depositAndPlaceBetSlip",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "gameCode",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "playerChoice",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "token",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "approval",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "deadline",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint8",
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "s",
+        "type": "bytes32"
+      }
+    ],
+    "name": "depositAndPlaceBetSlipWithPermit",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBetSlip",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "betAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "returnAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "gameCode",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "playerChoice",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "gameResult",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "createdDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastModifiedDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "enum BetSlips.Status",
+            "name": "currentStatus",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct BetSlips.BetSlip",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "gameResult",
+        "type": "string"
+      }
+    ],
+    "name": "setBetSlip",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "betAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "returnAmount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "gameCode",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "playerChoice",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "gameResult",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "createdDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "lastModifiedDate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "enum BetSlips.Status",
+            "name": "currentStatus",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct BetSlips.BetSlip",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "tokenERC20",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "withdrawERC20",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]
