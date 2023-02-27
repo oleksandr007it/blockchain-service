@@ -1,0 +1,26 @@
+{
+  "name": "blockchain-listener",
+  "version": "1.0.0",
+  "description": "## Description Written in nodejs since web3j (blockchain client) is not working when interacting with AC blockchain contracts. This service is used a simple wrapper for blockchain integration.",
+  "main": "app.js",
+
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.htecoins.com:ac-gaming-platform-backend/htegaming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sequelize": "^6.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crypto": "^1.0.1",
+    "express": "^4.17.3",
+    "kafkajs": "^2.0.0",
+    "nconf": "^0.12.0",
+    "pg": "^8.7.3",
+    "web3": "^1.7.3"
+  }
+}

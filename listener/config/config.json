@@ -1,0 +1,63 @@
+{
+  "app": {
+    "name": "blockchain-service",
+    "port": "7004",
+    "dice_contract_address": "0x6320E63a2ca93757080F4B84Db56c5C780205116",
+    "coinFlip_contract_address": "0xdc1eF4f12AaaC97f4785085c0a9C7d4B687EA00b",
+    "roulette_contract_address": "0x43986711477bbEB18d7BC97d139b5877B5622F7B",
+    "mines_contract_address": "0x541986969e3588F29321bE0fd5c0480680D5310f",
+    "plinko_contract_address": "0xc514282F0A320A629564a67F1750c9695aA7907B",
+    "circle_contract_address": "0x194AE84BC53c455c0C92d3869C494Ac0c0d89541",
+    "bomb_contract_address": "0x5493A74f69f2898417d29EC8D37b25743971D267",
+    "limbo_contract_address": "0xDe549d7d7cD1e54A548B543664a4280649D3Bba3",
+    "hilo_contract_address": "0x9b1ad90821a058FA3042c67de4B87287f172C00D",
+    "balloon_contract_address": "0x8e2bbE0437501809144e875e8A79bD68Cb0C3Dd0",
+    "stairs_contract_address": "0xBA0D6C7c33c592EfF4bE4f25c376E8Eeb008F74D",
+    "dice_game_code": "dice",
+    "coinFlip_game_code": "coinflip",
+    "roulette_game_code": "roulette",
+    "mines_game_code": "mines",
+    "plinko_game_code": "plinko",
+    "circle_game_code": "circle",
+    "bomb_game_code": "bomb",
+    "limbo_game_code": "limbo",
+    "hilo_game_code": "hilo",
+    "balloon_game_code": "balloon",
+    "stairs_game_code": "stairs",
+    "betSlip_contract_address": "0x79d965eBF8bE9Adfe1B976aAC9635164658C6d14",
+    "privateKey": "0x5fb92d6e98884f76de468fa3f6278f8807c48bebc13595d45af5bdc4da702133",
+    "usdtAddress": "0xFFfffffF8d2EE523a2206206994597c13D831EC7",
+    "rpc_url": "https://aminoxtestnet.node.alphacarbon.network",
+    "seed_service_url": "http://seed-service:7002",
+    "completed_event_name": "betSlipCompleted",
+    "placed_event_name": "betSlipPlaced",
+    "scheduler": {
+      "delay": 2000
+    },
+    "db": {
+      "host": "localhost",
+      "port": 5432,
+      "user": "htegaming",
+      "password": "htegaming",
+      "schema": "blockchain_service",
+      "pool": {
+        "max": 10,
+        "connectionTimeout": 2000,
+        "idle": 30000
+      }
+    },
+    "kafka": {
+      "clientId": "blockchain-service",
+      "bootstrapServers": "localhost:9092",
+      "topics": {
+        "betSlipEvents": "betslip_events",
+        "gameEvents": "game_events"
+      },
+      "messageTypes": {
+        "betslipPlacedEvent": "BetslipPlacedEvent",
+        "betslipCompletedEvent": "BetslipCompletedEvent",
+        "singlePlayerGameCompletedEvent": "SinglePlayerGameCompletedEvent"
+      }
+    }
+  }
+}

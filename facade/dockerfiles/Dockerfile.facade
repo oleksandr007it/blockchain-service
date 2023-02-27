@@ -1,0 +1,13 @@
+FROM node:16.15-slim
+
+WORKDIR /app
+
+COPY ["package.json", "package-lock.json*", "./"]
+
+RUN npm install --production
+
+COPY . .
+
+EXPOSE 7005
+
+CMD [ "node", "graphql/index.js" ]

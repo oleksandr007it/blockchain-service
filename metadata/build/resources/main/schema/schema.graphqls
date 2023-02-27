@@ -1,0 +1,38 @@
+type Query {
+    blockchainMetadata(blockchainCode: String) : [Blockchain!]!
+}
+
+type Blockchain {
+    id: String!
+    code: String!
+    name: String!
+    rpcUrl: String!
+    explorerUrl: String!
+
+    tokens: [Token!]!
+    games: [GameContract!]!
+    betslip: BetslipContract!
+}
+
+type GameContract {
+    name: String!
+    address: String!
+    abi: String!
+}
+
+type BetslipContract {
+    address: String!
+    abi: String!
+}
+
+type Token {
+    symbol: ID!
+    digits: Int!
+    type: TokenType!
+    address: String!
+    abi: String!
+}
+
+enum TokenType {
+    NATIVE, ERC20
+}

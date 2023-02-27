@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "htegaming.blockchain",
+      "type": "com.htegaming.metadata.config.MetadataConfigurationProperties",
+      "sourceType": "com.htegaming.metadata.config.MetadataConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "htegaming.blockchain.metadata",
+      "type": "java.util.List<com.netflix.dgs.codegen.generated.types.Blockchain>",
+      "sourceType": "com.htegaming.metadata.config.MetadataConfigurationProperties"
+    }
+  ],
+  "hints": []
+}

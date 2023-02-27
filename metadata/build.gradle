@@ -1,0 +1,14 @@
+plugins {
+    id 'com.htegaming.graphql-application-conventions'
+}
+
+dependencies {
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor:2.7.0"
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+bootBuildImage {
+    imageName = "dapp-blockchain-metadata"
+}

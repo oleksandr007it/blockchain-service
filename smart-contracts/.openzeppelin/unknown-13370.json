@@ -1,0 +1,1133 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x930c257D87D853632A0b31EA465bc7354c8A6Dc8",
+      "txHash": "0x68412e9ea71ed9cb2e398e20358f7631ba318dfa3feb468ed234d8111dc6c106",
+      "kind": "uups"
+    },
+    {
+      "address": "0x481D191E27976E3b2B540Dd9A838e158Ef8907Ec",
+      "txHash": "0x31d4f4649400dfdf99a9a368b2bb5e4c326bb1a10e955262ca2655ec5788ebaf",
+      "kind": "uups"
+    },
+    {
+      "address": "0xa751c4bBF823504691B6b45AB52CaE976585b51A",
+      "txHash": "0x69cc16a0de9b3c821e44a52040a0efe624308df1402fe077e8e4063c5e18e55c",
+      "kind": "uups"
+    },
+    {
+      "address": "0x26562B4797A1E74b6A6F55433C1dC67Fbb3377B6",
+      "txHash": "0xce0878e7120ead05314f3bc290544d0481f70d5d9e8cb6f1389cb692a8ce6316",
+      "kind": "uups"
+    },
+    {
+      "address": "0x48ef50C9eE331D9Bf851bF924d57772f5555aCD9",
+      "txHash": "0x61194b32abce7e994f2757665ae651bb2890f9773f41ad24bf1a4a9245076585",
+      "kind": "uups"
+    },
+    {
+      "address": "0xb18D1155c04d44C39d429e5467C608ef253e0D6c",
+      "txHash": "0x3723df11c575b3e4510de11a59e8af53949c270c466069b3efe3d808b9584c77",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "52c69c8a181c5933cb6d6c2a0b3dab115681be77ef4ab7beee782407bac7e35a": {
+      "address": "0x0459BDf9D52346dD51998eA42F39d4b5758eF0c4",
+      "txHash": "0xb8fb9c93b55e173cf6952014cfc24fa9a587c2cb8f9f509582123696454599df",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:247"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "_betSlipsCount",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:13"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_address",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:14"
+          },
+          {
+            "label": "balance",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_struct(Balance)5543_storage",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:15"
+          },
+          {
+            "label": "_betSlips",
+            "offset": 0,
+            "slot": "256",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(BetSlip)5573_storage)",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:17"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(Status)5536": {
+            "label": "enum IBetSlips.Status",
+            "members": [
+              "PLACED",
+              "COMPLETED",
+              "REVOKED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(BetSlip)5573_storage)": {
+            "label": "mapping(string => struct IBetSlips.BetSlip)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Balance)5543_storage": {
+            "label": "struct IBetSlips.Balance",
+            "members": [
+              {
+                "label": "before",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "later",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "decimal",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(BetSlip)5573_storage": {
+            "label": "struct IBetSlips.BetSlip",
+            "members": [
+              {
+                "label": "betId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "player",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "token",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "gameCode",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "playerGameChoice",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "gameResult",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "wagerAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "returnAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "odds",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "seedHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "seed",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(Status)5536",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "placedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "completedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(RoleData)34_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "508e2679623c6280694305caf51a4ee9e080a283adb0a3427014de570ad4c279": {
+      "address": "0x856AA36D4db7b29728fA2879428BaFD5ab272330",
+      "txHash": "0x5b403261a9e3866f86bcd4182edada39cd965e61a27803341e5749683e5b2f75",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "_playerChoices",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(DicePlayerChoice)988_storage)",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:27"
+          },
+          {
+            "label": "_betLimits",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_struct(BetLimit)995_storage)",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:29"
+          },
+          {
+            "label": "_betTokens",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_uint256,t_address)",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:31"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_address",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:33"
+          },
+          {
+            "label": "_betTokenCount",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_uint256",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:34"
+          },
+          {
+            "label": "_betSlipsAddr",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_address_payable",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:36"
+          },
+          {
+            "label": "_rtp",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_uint256",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:38"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_enum(DiceGameChoice)982": {
+            "label": "enum DiceGame.DiceGameChoice",
+            "members": [
+              "OVER",
+              "UNDER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(BetLimit)995_storage)": {
+            "label": "mapping(address => struct DiceGame.BetLimit)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(DicePlayerChoice)988_storage)": {
+            "label": "mapping(string => struct DiceGame.DicePlayerChoice)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_address)": {
+            "label": "mapping(uint256 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BetLimit)995_storage": {
+            "label": "struct DiceGame.BetLimit",
+            "members": [
+              {
+                "label": "min",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "max",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "defaultValue",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(DicePlayerChoice)988_storage": {
+            "label": "struct DiceGame.DicePlayerChoice",
+            "members": [
+              {
+                "label": "choice",
+                "type": "t_enum(DiceGameChoice)982",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "playerNumber",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_string_storage": {
+            "label": "string"
+          }
+        }
+      }
+    },
+    "ebf661e542936d410559cd6ad03db255252f3a3aa1e8e25a73023d09c2f908bf": {
+      "address": "0x72297093781c818c34b86de4cA1d15Db49717519",
+      "txHash": "0x0b9d7bfda61da7bc9bc1676e8b7b8d4df0fe3a462eddd3a7acd0be6796b73bca",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:247"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "_betSlipsCount",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_uint256",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:13"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_address",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:14"
+          },
+          {
+            "label": "_betSlips",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(BetSlip)4725_storage)",
+            "contract": "BetSlips",
+            "src": "contracts/betslip/BetSlips.sol:16"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(Status)4688": {
+            "label": "enum IBetSlips.Status",
+            "members": [
+              "PLACED",
+              "COMPLETED",
+              "REVOKED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(BetSlip)4725_storage)": {
+            "label": "mapping(string => struct IBetSlips.BetSlip)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BetSlip)4725_storage": {
+            "label": "struct IBetSlips.BetSlip",
+            "members": [
+              {
+                "label": "betId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "player",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "token",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "gameCode",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "playerGameChoice",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "gameResult",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "wagerAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "returnAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "odds",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "seedHash",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "seed",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(Status)4688",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "placedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "completedAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(RoleData)34_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "d7eb2038553243396d96582fe20a46fea4a5b777e17469966a5848cde9c0e4a7": {
+      "address": "0xd8D65151387255fAaDf19d14e765985EF68147b2",
+      "txHash": "0xbeeaea91ad7cd491558aecd30d529dfec76225163ecfc939b9f3b43606568898",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "_betLimits",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_struct(BetLimit)3097_storage)",
+            "contract": "BaseGame",
+            "src": "contracts/games/BaseGame.sol:14"
+          },
+          {
+            "label": "_rtp",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "BaseGame",
+            "src": "contracts/games/BaseGame.sol:16"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "BaseGame",
+            "src": "contracts/games/BaseGame.sol:17"
+          },
+          {
+            "label": "_playerChoices",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(DicePlayerChoice)3333_storage)",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:22"
+          },
+          {
+            "label": "_betSlipsAddr",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_address_payable",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:24"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_enum(DiceGameChoice)3327": {
+            "label": "enum DiceGame.DiceGameChoice",
+            "members": [
+              "OVER",
+              "UNDER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(BetLimit)3097_storage)": {
+            "label": "mapping(address => struct BaseGame.BetLimit)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(DicePlayerChoice)3333_storage)": {
+            "label": "mapping(string => struct DiceGame.DicePlayerChoice)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BetLimit)3097_storage": {
+            "label": "struct BaseGame.BetLimit",
+            "members": [
+              {
+                "label": "min",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "max",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "defaultValue",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(DicePlayerChoice)3333_storage": {
+            "label": "struct DiceGame.DicePlayerChoice",
+            "members": [
+              {
+                "label": "choice",
+                "type": "t_enum(DiceGameChoice)3327",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "playerNumber",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_string_storage": {
+            "label": "string"
+          }
+        }
+      }
+    },
+    "fcb399eec6c3a55e1b004d7415d11eced8898369062fdd368d46297337864e29": {
+      "address": "0x04906a5030e1A02838B0ddE96807cefcBec8d3Be",
+      "txHash": "0x63056c482c482675f8e7b82b6d2c6a543ea625cf5dcf18f31ba01dda19cf9598",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "_betLimits",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_struct(BetLimit)3097_storage)",
+            "contract": "BaseGame",
+            "src": "contracts/games/BaseGame.sol:14"
+          },
+          {
+            "label": "_rtp",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "BaseGame",
+            "src": "contracts/games/BaseGame.sol:16"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_address",
+            "contract": "BaseGame",
+            "src": "contracts/games/BaseGame.sol:17"
+          },
+          {
+            "label": "_playerChoices",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(DicePlayerChoice)3333_storage)",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:22"
+          },
+          {
+            "label": "_betSlipsAddr",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_address_payable",
+            "contract": "DiceGame",
+            "src": "contracts/games/DiceGame.sol:24"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_enum(DiceGameChoice)3327": {
+            "label": "enum DiceGame.DiceGameChoice",
+            "members": [
+              "OVER",
+              "UNDER"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(BetLimit)3097_storage)": {
+            "label": "mapping(address => struct BaseGame.BetLimit)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(DicePlayerChoice)3333_storage)": {
+            "label": "mapping(string => struct DiceGame.DicePlayerChoice)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BetLimit)3097_storage": {
+            "label": "struct BaseGame.BetLimit",
+            "members": [
+              {
+                "label": "min",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "max",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "defaultValue",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(DicePlayerChoice)3333_storage": {
+            "label": "struct DiceGame.DicePlayerChoice",
+            "members": [
+              {
+                "label": "choice",
+                "type": "t_enum(DiceGameChoice)3327",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "playerNumber",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_string_storage": {
+            "label": "string"
+          }
+        }
+      }
+    }
+  }
+}

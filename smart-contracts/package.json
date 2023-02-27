@@ -1,0 +1,52 @@
+{
+  "name": "blockchain-service",
+  "version": "1.0.0",
+  "description": "## Description Written in nodejs since web3j (blockchain client) is not working when interacting with AC blockchain contracts. This service is used a simple wrapper for blockchain integration.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "build": "npx hardhat compile",
+    "deploy": "npx hardhat run ../scripts/deploy-contracts.js",
+    "deploy-local": "npx hardhat run ../scripts/deploy-contracts.js --network local",
+    "test": "npx hardhat test",
+    "test-local": "npx hardhat test --network local",
+    "local-network": "../docker run --rm -p 9944:9944 -p 9933:9933 --name amino-dev gcr.io/alpha-carbon/amino:v0.8.0 --dev --execution=native --ws-external --rpc-external --sealing 3000 -linfo,pallet_ethereum=trace,evm=trace,pallet_vrf_oracle=error"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.htecoins.com:ac-gaming-platform-backend/blockchain-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-ganache": "^2.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
+    "@openzeppelin/hardhat-upgrades": "^1.17.0",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "hardhat": "^2.9.6",
+    "log4js": "^6.4.5",
+    "sequelize": "^6.7.0",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crypto": "^1.0.1",
+    "ethers": "^5.6.4",
+    "express": "^4.17.3",
+    "kafkajs": "^2.0.0",
+    "nconf": "^0.12.0",
+    "pg": "^8.7.3",
+    "solidity-coverage": "^0.7.21",
+    "web3": "^1.7.3"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

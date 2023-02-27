@@ -1,0 +1,14 @@
+{
+  "app": {
+    "name": "blockchain-service",
+    "port": "7005",
+    "dice_contract_address": "0x3E6DbdD34cc488C88307203b2b700748C14b5241",
+    "dice_game_code": "dice",
+    "betSlip_code": "betslip",
+    "betSlip_contract_address": "0x2114A9cf23e245496Eb0050Dd134189F9e794F73",
+    "usdtAddress" : "0xFFfffffF8d2EE523a2206206994597c13D831EC7",
+    "privateKey": "0x5fb92d6e98884f76de468fa3f6278f8807c48bebc13595d45af5bdc4da702133",
+    "rpc_url": "https://aminoxtestnet.node.alphacarbon.network",
+    "chainId":13370
+  }
+}
